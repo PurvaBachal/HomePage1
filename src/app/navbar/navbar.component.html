@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">GBS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/events" routerLinkActive="active">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/addevent" routerLinkActive="active">Add Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signin" routerLinkActive="active">SignIn/SignUp</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-category="sports">Cricket Tournaments</a>
+              <ul class="dropdown-menu subcategories" data-category="sports">
+                <li><a class="dropdown-item" href="#">2019 Cricket World Cup</a></li>
+                <li><a class="dropdown-item" href="#">ICC Cricket World Cup</a></li>
+                <li><a class="dropdown-item" href="#">Indian Premier League</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-category="music">Chess Tournaments</a>
+              <ul class="dropdown-menu subcategories" data-category="music">
+                <li><a class="dropdown-item" href="#">FIDE International Rating Chess Tournaments 2023</a></li>
+                <li><a class="dropdown-item" href="#">International Chess Festival Baku open-2023</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-category="art">Table Tennis Tournaments</a>
+              <ul class="dropdown-menu subcategories" data-category="art">
+                <li><a class="dropdown-item" href="#">Inter-School Championship</a></li>
+                <li><a class="dropdown-item" href="#">Table Tennis World Cup 2023</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-category="food">BasketBall Tournaments</a>
+              <ul class="dropdown-menu subcategories" data-category="food">
+                <li><a class="dropdown-item" href="#">American NBA Girls League</a></li>
+                <li><a class="dropdown-item" href="#">FIBA BasketBall World Cup</a></li>
+                <li><a class="dropdown-item" href="#">UBL Pro League</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-category="technology">FootBall Tournaments</a>
+              <ul class="dropdown-menu subcategories" data-category="technology">
+                <li><a class="dropdown-item" href="#">FIFA World Cup</a></li>
+                <li><a class="dropdown-item" href="#">UEFA Champions League</a></li>
+                <li><a class="dropdown-item" href="#">UEFA European League</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
